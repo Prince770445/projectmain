@@ -1,0 +1,42 @@
+🚀 QUICK START - Follow These Steps:
+
+STEP 1: Open a NEW Terminal Window (keep it open)
+
+STEP 2: Navigate to the frontend folder and start React:
+
+In the new terminal, type:
+  cd C:\Users\CL354\OneDrive\Desktop\prince_project\frontend
+  
+Then type:
+  npm start
+
+STEP 3: Wait for it to compile (20-30 seconds)
+You should see:
+  Compiled successfully!
+  webpack compiled
+  
+STEP 4: Open your browser
+Go to: http://localhost:3000
+
+===========================================
+✅ WHAT'S RUNNING RIGHT NOW:
+- Backend: ✓ Running on http://localhost:5000
+- Database: ✓ Connected with sample data
+- Frontend: ☐ Needs to be started (do steps above)
+
+===========================================
+📝 LOGIN WITH THESE CREDENTIALS:
+Email: demo@example.com
+Password: password123
+
+===========================================
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,56 @@
+🔍 ISSUE DIAGNOSED:
+
+✅ Backend (port 5000): WORKING ✓
+   - API is responding
+   - Database connected
+   - All endpoints working
+
+❌ Frontend (port 3000): NOT RUNNING ✗
+   - React dev server hasn't started
+   - This is why you see "connection refused"
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🚀 SOLUTION - Start the Frontend:
+
+Method 1 (EASIEST):
+   Double-click: start-frontend.bat
+
+Method 2 (Terminal):
+   1. Open PowerShell or CMD
+   2. Type these commands:
+   
+      cd C:\Users\CL354\OneDrive\Desktop\prince_project\frontend
+      npm start
+   
+   3. Wait 20-30 seconds
+   4. Browser will auto-open to http://localhost:3000
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📝 What to Expect:
+
+After starting, you'll see:
+   ✓ Backend API: http://localhost:5000 (already running)
+   ✓ Frontend App: http://localhost:3000 (will start)
+
+Then you can:
+   • Open http://localhost:3000 in browser
+   • Login with: demo@example.com / password123
+   • Browse products
+   • Test PWA features
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+Note: The backend running without a frontend is normal.
+     You just need to start the React app on port 3000.
+
+
+
+
+
+
+
+
+
+
