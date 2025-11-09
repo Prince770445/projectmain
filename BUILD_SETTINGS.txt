@@ -1,0 +1,62 @@
+==========================================
+BUILD AND OUTPUT SETTINGS
+(For Vercel/Netlify Deployment)
+==========================================
+
+FRONTEND DEPLOYMENT SETTINGS:
+
+Build Command:
+npm run build
+OR
+cd frontend && npm run build
+
+Output Directory:
+build
+OR
+frontend/build
+
+Install Command:
+npm install
+OR
+cd frontend && npm install
+
+Root Directory (if deploying frontend only):
+frontend
+
+==========================================
+QUICK START COMMANDS
+==========================================
+
+Start Application:
+cd C:\Users\CL354\OneDrive\Desktop\prince_project
+.\start-all.bat
+
+OR Manual Start:
+
+Backend:
+cd C:\Users\CL354\OneDrive\Desktop\prince_project\backend
+node server.js
+
+Frontend:
+cd C:\Users\CL354\OneDrive\Desktop\prince_project\frontend
+cmd /c "npm start"
+
+Start MongoDB (if needed):
+cd C:\Users\CL354\OneDrive\Desktop\prince_project
+docker compose up -d mongodb
+cd backend
+node scripts/seed.js
+
+==========================================
+ACCESS URLs
+==========================================
+
+Frontend: http://localhost:3000
+Backend API: http://localhost:5000
+
+Demo Login:
+Email: demo@example.com
+Password: password123
+
+
+

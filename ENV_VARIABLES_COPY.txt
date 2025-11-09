@@ -1,0 +1,58 @@
+==========================================
+ENVIRONMENT VARIABLES TO ADD
+==========================================
+
+Copy these Key-Value pairs into your deployment platform:
+
+BACKEND ENVIRONMENT VARIABLES:
+
+Key: PORT
+Value: 5000
+
+Key: MONGODB_URI
+Value: mongodb+srv://username:password@cluster.mongodb.net/pwa-shop
+(Replace with your MongoDB Atlas connection string)
+
+Key: JWT_SECRET
+Value: your-super-secret-jwt-key-change-this-in-production
+(Generate a secure random string - see instructions below)
+
+Key: NODE_ENV
+Value: production
+
+Key: CORS_ORIGIN
+Value: https://your-frontend-domain.vercel.app
+(Replace with your actual frontend URL)
+
+==========================================
+FRONTEND ENVIRONMENT VARIABLES (if deploying separately):
+==========================================
+
+Key: REACT_APP_API_URL
+Value: https://your-backend-api.railway.app
+(Replace with your actual backend API URL)
+
+==========================================
+GENERATE JWT_SECRET:
+==========================================
+
+Run this command to generate a secure JWT_SECRET:
+node -e "console.log(require('crypto').randomBytes(64).toString('hex'))"
+
+Or use OpenSSL:
+openssl rand -hex 64
+
+==========================================
+MINIMUM REQUIRED FOR BACKEND:
+==========================================
+
+PORT=5000
+MONGODB_URI=mongodb+srv://username:password@cluster.mongodb.net/pwa-shop
+JWT_SECRET=your-generated-secret-key-here
+NODE_ENV=production
+CORS_ORIGIN=https://your-frontend-url.com
+
+==========================================
+
+
+

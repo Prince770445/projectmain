@@ -7,12 +7,13 @@
     "dev": "concurrently \"npm run dev:server\" \"npm run dev:frontend\"",
     "dev:server": "cd backend && nodemon server.js",
     "dev:frontend": "cd frontend && npm start",
-    "install:all": "npm install && cd frontend && npm install",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install",
     "build": "cd frontend && npm run build",
     "start": "cd backend && node server.js",
     "seed": "cd backend && node scripts/seed.js",
     "docker:up": "docker-compose up -d",
-    "docker:down": "docker-compose down"
+    "docker:down": "docker-compose down",
+    "vercel-build": "cd frontend && npm install && npm run build"
   },
   "keywords": ["pwa", "ecommerce", "offline-first"],
   "author": "",
@@ -31,4 +32,3 @@
     "concurrently": "^8.2.2"
   }
 }
-
